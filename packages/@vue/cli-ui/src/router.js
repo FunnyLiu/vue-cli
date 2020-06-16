@@ -3,7 +3,7 @@ import Router from 'vue-router'
 import { apolloClient } from './vue-apollo'
 
 import ProjectHome from './components/app/ProjectHome.vue'
-
+// 项目面板组件
 import ProjectDashboard from './components/dashboard/ProjectDashboard.vue'
 import ProjectPlugins from './components/plugin/ProjectPlugins.vue'
 import ProjectPluginsAdd from './components/plugin/ProjectPluginsAdd.vue'

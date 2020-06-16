@@ -5,7 +5,7 @@
       <router-view/>
     </div>
     <VueLoadingIndicator v-else class="app-init-loading overlay big accent"/>
-
+    <!-- 底部状态栏组件 -->
     <StatusBar/>
     <ClientAddonLoader/>
     <LocaleLoader/>
@@ -23,6 +23,7 @@ export default {
   },
 
   computed: {
+    // 国际化完成后再ready
     ready () {
       return Object.keys(i18n.getLocaleMessage('en')).length
     }
